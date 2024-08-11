@@ -15,6 +15,16 @@
 #X obj 325 346 1loop rec6.wav 5;
 #X obj 477 346 1loop rec7.wav 6;
 #X obj 628 348 1loop rec8.wav 7;
+#X obj 175 526 1loop rec9.wav 8;
+#X obj 326 528 1loop rec10.wav 9;
+#X obj 478 528 1loop rec11.wav 10;
+#X obj 629 530 1loop rec12.wav 11;
+#X obj 174 704 1loop rec13.wav 12;
+#X obj 325 706 1loop rec14.wav 13;
+#X obj 477 706 1loop rec15.wav 14;
+#X obj 628 708 1loop rec16.wav 15;
+#X obj 632 19 loadbang;
+#X msg 632 55 \; pd dsp 1;
 #X connect 0 0 1 0;
 #X connect 0 1 1 0;
 #X connect 0 2 1 0;
@@ -27,3 +37,4 @@
 #X connect 4 0 5 0;
 #X connect 4 0 5 1;
 #X connect 7 0 4 0;
+#X connect 24 0 25 0;

@@ -41,7 +41,6 @@
 #X obj 581 546 dac~;
 #X obj 581 193 *~ 1;
 #X msg 851 403 127;
-#X obj 851 440 ctlout \$2 1;
 #X msg 856 526 64, f 2;
 #X obj 856 624 ctlout \$2 1;
 #X obj 896 563 i 0;
@@ -53,7 +52,7 @@
 #X connect 2 1 3 0;
 #X connect 3 0 12 0;
 #X connect 3 0 25 0;
-#X connect 3 0 38 0;
+#X connect 3 0 37 0;
 #X connect 4 0 17 0;
 #X connect 4 1 7 0;
 #X connect 4 1 0 0;
@@ -62,7 +61,7 @@
 #X connect 6 0 12 1;
 #X connect 7 0 12 1;
 #X connect 8 0 23 0;
-#X connect 8 0 40 1;
+#X connect 8 0 39 1;
 #X connect 10 0 17 0;
 #X connect 11 0 7 0;
 #X connect 12 0 5 0;
@@ -82,12 +81,14 @@
 #X connect 24 0 26 0;
 #X connect 24 0 13 0;
 #X connect 24 0 36 0;
+#X connect 24 0 37 0;
 #X connect 24 1 4 0;
 #X connect 24 1 25 0;
 #X connect 24 2 19 0;
 #X connect 24 2 6 0;
-#X connect 25 0 38 0;
-#X connect 25 0 42 0;
+#X connect 24 2 25 0;
+#X connect 25 0 37 0;
+#X connect 25 0 41 0;
 #X connect 26 0 23 0;
 #X connect 27 0 28 0;
 #X connect 28 0 21 0;
@@ -97,10 +98,9 @@
 #X connect 33 0 34 0;
 #X connect 33 0 34 1;
 #X connect 35 0 33 0;
-#X connect 36 0 37 0;
-#X connect 36 0 40 1;
-#X connect 38 0 39 0;
-#X connect 40 0 39 0;
-#X connect 40 0 41 0;
-#X connect 42 0 40 0;
+#X connect 36 0 39 1;
+#X connect 37 0 38 0;
+#X connect 39 0 38 0;
+#X connect 39 0 40 0;
+#X connect 41 0 39 0;
 #X coords 0 -1 1 1 120 160 1 840 100;
