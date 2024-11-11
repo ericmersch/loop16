@@ -9,30 +9,30 @@
 #X msg 755 112 0;
 #X msg 623 71 1;
 #X msg 683 349 0;
-#X floatatom 695 291 5 0 0 0 - - - 0;
+#X floatatom 706 282 5 0 0 0 - - - 0;
 #X obj 651 352 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 634 38 loadbang;
-#X obj 648 260 i 1;
+#X obj 651 268 i 1;
 #X obj 265 144 t b b;
 #X msg 582 136 open \$1 \, 1;
 #X msg 297 250 open \$1;
 #X obj 297 209 symbol \$1;
 #X obj 582 99 symbol \$1;
-#X obj 146 196 + 1;
-#X msg 170 221 0;
+#X obj 167 152 + 1;
+#X msg 185 313 0;
 #X floatatom 111 333 5 0 0 0 - - - 0;
-#X obj 110 196 i 0;
+#X obj 110 152 i 0;
 #X obj 879 115 bng 40 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 879 160 tgl 40 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 96 220 sel 0 1;
+#X obj 127 242 sel 0 1;
 #X obj 879 209 bng 40 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X msg 198 374 1;
 #X obj 110 43 ctlin \$2;
-#X obj 110 121 sel 127;
+#X obj 110 96 sel 127;
 #X obj 368 327 writesf~;
 #X obj 367 39 receive~ signal;
 #X obj 633 418 loadbang;
@@ -46,6 +46,9 @@
 #X obj 896 563 i 0;
 #X floatatom 896 588 5 0 0 0 - - - 0;
 #X obj 896 525 delay 25;
+#X text 198 72 1st press: start recording;
+#X text 198 91 2nd press: stop recording and loop;
+#X text 198 109 3rd press: stop loop;
 #X connect 0 0 29 0;
 #X connect 1 0 29 0;
 #X connect 2 0 35 0;
@@ -58,6 +61,7 @@
 #X connect 4 1 0 0;
 #X connect 5 0 10 0;
 #X connect 5 1 8 0;
+#X connect 5 1 19 0;
 #X connect 6 0 12 1;
 #X connect 7 0 12 1;
 #X connect 8 0 23 0;
@@ -74,8 +78,8 @@
 #X connect 17 0 14 0;
 #X connect 18 0 21 1;
 #X connect 19 0 21 1;
-#X connect 21 0 18 0;
 #X connect 21 0 24 0;
+#X connect 21 0 18 0;
 #X connect 21 0 20 0;
 #X connect 22 0 21 0;
 #X connect 24 0 26 0;
@@ -84,7 +88,6 @@
 #X connect 24 0 37 0;
 #X connect 24 1 4 0;
 #X connect 24 1 25 0;
-#X connect 24 2 19 0;
 #X connect 24 2 6 0;
 #X connect 24 2 25 0;
 #X connect 25 0 37 0;
