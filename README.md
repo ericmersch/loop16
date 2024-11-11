@@ -1,10 +1,10 @@
-For live performances, I built a custom DIY asynchrone loop station based on an Arduino and Raspberry Pi.
+For live performances, I built a custom DIY asynchrone loop station based on Arduino and Raspberry Pi.
 
 1. DIY USB MIDI interface
 
 In the context of a performance, I want to avoid having complex interface on the table. I prefer a discrete and minimalist interface in order to let the audience understand my actions as much as I can.
 I built this MIDI interface out of a wooden squared box, which I find esthetically consistent with the other objects that I use in performance.
-I wanted to have a visual feedback of the looper, so I used a 4x4 RGB NeoTrellis pad: the color is green or blue when playing the loops and red or orange when recording, with a blink each time a loop starts.
+I wanted to have a visual feedback of the looper, so I used a 4x4 RGB NeoTrellis pad: the color is green or blue when playing the loops and red or orange when recording, with a blink each time a loop starts. I'm using an Arduino Pro Micro whch is compatible with the library MIDIUSB.
 All the code concerning the MIDI interface is included in the file Neotrellis_MIDI_ctrl.ino
 
 2. Pure data loop station
