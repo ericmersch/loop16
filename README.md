@@ -20,4 +20,13 @@ The main code is contained in the abstraction 1loop.pd
 This abstraction is duplicated 16 times in the code 16loops.pd and this code also makes the link with the audio interface and a small reverb is added.
 The reverb uses the abstraction reverbA~.pd and setThreshold.pd
 
-A maximum of 16 loops can be played at the same time. Each of these loops have its own duration. Therefore, I speak of asynchrone loops, which are less predictible then traditional loops.
+A maximum of 16 loops can be played at the same time. Each of these loops have its own duration. Therefore, I speak of asynchrone loops, which are less predictible then synchrone loops.
+
+3. Raspberry Pi setup
+
+In order to run the pure data patch at boot, I modified the file
+/etc/rc.local
+and add the line
+pd -nogui -alsa -mididev 2 -audiodev 5 -inchannels 6 /home/pi/Documents/loop16
+before the line
+exit 0
