@@ -7,6 +7,8 @@ I built this MIDI interface out of a wooden squared box, which I find esthetical
 I wanted to have a visual feedback of the looper, so I used a 4x4 RGB NeoTrellis pad: the color is green or blue when playing the loops and red or orange when recording, with a blink each time a loop starts. I'm using an Arduino Pro Micro whch is compatible with the library MIDIUSB.
 All the code concerning the MIDI interface is included in the file Neotrellis_MIDI_ctrl.ino
 
+![image](picture.jpg)
+
 2. Pure data loop station
 
 This pure data patch is meant to be used with the DIY USB MIDI interface described before and a USB audio interface to record the sounds.
